@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio de Caso: El Impacto de la Retroalimentación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f9fafb;
+        }
+        .case-card {
+            border-left: 4px solid;
+        }
+        .scenario-a { border-color: #f59e0b; } /* Amber */
+        .scenario-b { border-color: #3b82f6; } /* Blue */
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="max-w-5xl mx-auto p-6 md:p-8">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Estudio de Caso: El Impacto de la Retroalimentación</h1>
+            <p class="mt-3 text-lg text-gray-600">Analiza los dos escenarios a continuación y reflexiona sobre el impacto que cada tipo de evaluación tiene en el aprendizaje del estudiante.</p>
+        </header>
+
+        <main>
+            <!-- Contenedor de los Escenarios -->
+            <section class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Escenario A -->
+                <div class="bg-white p-6 rounded-lg shadow-md case-card scenario-a">
+                    <h2 class="text-2xl font-bold text-amber-600 mb-4">Escenario A: Calificación Tradicional</h2>
+                    <div class="space-y-3 text-gray-700">
+                        <p><strong>Tarea:</strong> Un ensayo de historia sobre las causas de la caída del Imperio Romano.</p>
+                        <p><strong>Estudiante:</strong> Sofía.</p>
+                        <p><strong>Retroalimentación recibida:</strong> Al revisar su calificación, Sofía ve una nota numérica en la parte superior del ensayo: <strong class="text-lg">"85/100"</strong>.</p>
+                        <p>Debajo de la nota, hay un único comentario escrito por su docente:</p>
+                        <blockquote class="bg-amber-50 p-3 rounded-md border-l-4 border-amber-500 italic">
+                            "Buen trabajo, Sofía. Tienes un buen dominio del tema, pero puedes mejorar la organización de tus ideas."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Escenario B -->
+                <div class="bg-white p-6 rounded-lg shadow-md case-card scenario-b">
+                    <h2 class="text-2xl font-bold text-blue-700 mb-4">Escenario B: Evaluación con Rúbrica</h2>
+                    <div class="space-y-3 text-gray-700">
+                        <p><strong>Tarea:</strong> El mismo ensayo de historia sobre las causas de la caída del Imperio Romano.</p>
+                        <p><strong>Estudiante:</strong> Mateo.</p>
+                        <p><strong>Retroalimentación recibida:</strong> Mateo recibe una rúbrica de evaluación junto con su ensayo. No hay una única nota final, sino una valoración para cada criterio. Una sección de la rúbrica se ve así:</p>
+                        <div class="bg-blue-50 p-3 rounded-md border-l-4 border-blue-500 mt-2">
+                            <p class="font-bold">Criterio: Tesis y Argumento</p>
+                            <p class="text-sm"><strong>Nivel Alcanzado:</strong> Bueno (3 de 4 puntos)</p>
+                            <p class="italic mt-1">"La tesis es clara y argumentable. La mayoría de los argumentos la apoyan directamente, aunque un par de ideas podrían conectarse de forma más explícita."</p>
+                        </div>
+                         <p class="mt-2">La rúbrica continúa con otros criterios como "Organización" y "Uso de Fuentes", cada uno con su nivel y descriptor correspondiente.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Reflexión del Docente -->
+            <section class="bg-white p-8 rounded-lg shadow-xl mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Tu Reflexión</h2>
+                <label for="reflection" class="block text-md font-medium text-gray-700 mb-2">Analiza las implicaciones para el estudiante en cada caso. Considera las siguientes preguntas: ¿Qué aprende Sofía sobre cómo mejorar, en comparación con Mateo? ¿Qué escenario es más propenso a generar frustración o confusión? ¿Cuál de los dos fomenta una mentalidad de crecimiento y empodera más al estudiante? ¿Cómo se conecta esto con tu propia práctica?</label>
+                <textarea id="reflection" name="reflection" rows="10" class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition" placeholder="Escribe aquí tu análisis comparativo..."></textarea>
+            </section>
+
+            <!-- Sección de la Rúbrica y Guía de Uso -->
+            <section class="bg-white p-8 rounded-lg shadow-xl">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Rúbrica de Evaluación para tu Reflexión</h2>
+                
+                <!-- Rúbrica -->
+                <div class="overflow-x-auto mb-10">
+                    <table class="min-w-full border-collapse border border-gray-300">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="border border-gray-300 p-3 font-bold text-left text-sm text-gray-700">Criterio</th>
+                                <th class="border border-gray-300 p-3 font-bold text-left text-sm text-gray-700">Sobresaliente (3 Puntos)</th>
+                                <th class="border border-gray-300 p-3 font-bold text-left text-sm text-gray-700">Bueno (2 Puntos)</th>
+                                <th class="border border-gray-300 p-3 font-bold text-left text-sm text-gray-700">Necesita Mejora (1 Punto)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 p-3 font-semibold align-top">1. Análisis Comparativo</td>
+                                <td class="border border-gray-300 p-3 align-top text-sm">Compara explícitamente ambos escenarios, destacando diferencias profundas en la claridad, utilidad y el impacto emocional de la retroalimentación para el estudiante.</td>
+                                <td class="border border-gray-300 p-3 align-top text-sm">Compara ambos escenarios, pero se enfoca principalmente en las diferencias superficiales sin profundizar en el impacto para el estudiante.</td>
+                                <td class="border border-gray-300 p-3 align-top text-sm">Describe los escenarios por separado pero no establece una comparación clara y directa entre ellos.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 p-3 font-semibold align-top">2. Profundidad de la Reflexión</td>
+                                <td class="border border-gray-300 p-3 align-top text-sm">Analiza de forma crítica cómo cada escenario afecta el aprendizaje futuro, la autonomía y la mentalidad de crecimiento del estudiante, usando los conceptos del módulo.</td>
+                                <td class="border border-gray-300 p-3 align-top text-sm">Reflexiona sobre el aprendizaje del estudiante, pero el análisis es general y no utiliza conceptos específicos como "mentalidad de crecimiento" o "autonomía".</td>
+                                <td class="border border-gray-300 p-3 align-top text-sm">La reflexión es superficial y se limita a afirmar que un método es "mejor" que el otro sin explicar el porqué desde la perspectiva del aprendizaje.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 p-3 font-semibold align-top">3. Conexión con la Práctica Docente</td>
+                                <td class="border border-gray-300 p-3 align-top text-sm">Conecta claramente el análisis del caso con su propia experiencia o contexto de enseñanza, identificando implicaciones concretas para su práctica profesional.</td>
+                                <td class="border border-gray-300 p-3 align-top text-sm">Menciona su práctica docente de forma general, pero no establece una conexión explícita o un plan de acción derivado del análisis.</td>
+                                <td class="border border-gray-300 p-3 align-top text-sm">No establece ninguna conexión entre el análisis del caso y su propia práctica docente.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Guía de Uso -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Cómo Usar esta Rúbrica para Evaluar y Retroalimentar</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-700">1. Calificación:</h4>
+                            <ul class="list-disc list-inside space-y-1 mt-2 text-gray-600">
+                                <li>Lee la reflexión escrita por el docente en la herramienta del estudio de caso.</li>
+                                <li>Para cada criterio (fila), elige el descriptor de nivel que mejor represente la calidad de la respuesta.</li>
+                                <li>Asigna los puntos correspondientes para cada criterio.</li>
+                                <li>Suma los puntos para obtener una <strong>Calificación Total sobre 9 puntos</strong>.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-700">2. Retroalimentación:</h4>
+                            <p class="text-gray-600 mt-2">La verdadera riqueza de la rúbrica está en la retroalimentación cualitativa.</p>
+                            <ul class="list-disc list-inside space-y-3 mt-2 text-gray-600">
+                                <li>
+                                    <strong>Para los puntos fuertes:</strong> Utiliza el lenguaje de los descriptores del nivel "Sobresaliente".
+                                    <blockquote class="bg-gray-100 p-2 mt-1 rounded-md border-l-4 border-gray-400 italic text-sm">Por ejemplo: "Excelente tu análisis comparativo, destacaste con mucha claridad el impacto emocional de cada tipo de feedback."</blockquote>
+                                </li>
+                                <li>
+                                    <strong>Para las áreas de mejora:</strong> Utiliza el lenguaje de los descriptores de los niveles "Bueno" y "Necesita Mejora" para señalar exactamente qué faltó.
+                                    <blockquote class="bg-gray-100 p-2 mt-1 rounded-md border-l-4 border-gray-400 italic text-sm">Por ejemplo: "Tu reflexión sobre el aprendizaje es buena. Para llevarla al siguiente nivel, intenta conectar explícitamente cómo una rúbrica puede fomentar la autonomía del estudiante, un concepto clave que vimos."</blockquote>
+                                </li>
+                                <li>
+                                    <strong>Conexión con la Práctica:</strong> Este es el criterio más importante para la transferencia del aprendizaje. Anima al docente a pensar en un paso concreto que podría dar en su propia aula después de esta reflexión.
+                                    <blockquote class="bg-gray-100 p-2 mt-1 rounded-md border-l-4 border-gray-400 italic text-sm">Por ejemplo: "Me gustó que conectaras esto con tus clases. ¿Cuál sería la primera pequeña tarea en la que podrías probar una rúbrica sencilla para ver el cambio en tus estudiantes?"</blockquote>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="mt-6 pt-4 border-t border-gray-200 font-medium text-gray-700">Esta rúbrica asegura que la evaluación de la reflexión sea tan clara, justa y formativa como el propio contenido que se enseña en el curso.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
